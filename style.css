@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px auto;
+    width: 95%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #4E5150;
+}
+
+
+/* CART */
+main section.cart {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 12px;
+    height: 500px;
+}
+
+img {
+    object-fit: cover;
+    width: 120px;
+    height: auto;
+    border-radius: 12px;
+}
+
+main section.cart div{
+    display: flex;
+}
+
+main section.cart div div.cart-info{
+    display: block;
+    padding-left: 20px;
+    width: 160px;
+}
+
+main section.cart div div.cart-info p.price{
+    color: #f2994a;
+    margin: 10px 0 25px;
+}
+
+main section.cart div div.cart-info p span{
+    color: #4E5150;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+main section.cart div div.cart-info div.counter{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #BDBDBD;
+    padding: 15px 10px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+main section.cart div div.cart-info div.counter button {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #828282;
+    border-radius: 5px;
+    border: none;
+    line-height: 10px;
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+main section.cart div.vintage-backbag{
+    margin-bottom: 20px;
+}
+
+main section.cart div.levi-shoes{
+    margin-bottom: 80px;
+}
+
+main section.cart div.shipping-total{
+    border-top: 1px solid #828282;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+/* CONTACT AND SHIPPING ADDRESS */
+main section.contact-info {
+    padding: 50px 0;
+}
+
+main section form label{
+    display: block;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+div.input-border{
+    border: 1px solid #828282;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+}
+
+span.material-symbols-outlined.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 20px;
+}
+
+main section form div input, select{
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background: none;
+}
+
+div.country-postal_code {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.country-postal_code div {
+    display: block;
+}
+
+div.country-postal_code div div.input-border{
+    display: flex;
+}
+
+div.country {
+    margin-right: 20px;
+}
+
+div.postal_code {
+    width: 100%;
+}
+
+input#postal_code {
+    width: 100%;
+}
+
+#checkbox_label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+div.checkbox {
+    margin-top: 10px;
+}
+
+button.submit {
+    border-radius: 12px;
+    padding: 20px 50px;
+    color: #fff;
+    background: #F2994A;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin: 20px 0 100px;
+    float: right;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 200px;
+    color: #DDDDDD;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer span{
+    color: #A9A9A9;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 640px) {
+    body {
+        width: 80%;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    main section.cart {
+        margin-left: 30px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1020px) {
+    body {
+        width: 60%;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    footer {
+        margin-top: 50px;
+    }
+}
+
+
+

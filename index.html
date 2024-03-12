@@ -1,95 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <link rel="stylesheet" href="./style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Checkout Page</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+      <header>
+          <h1>Checkout</h1>
+      </header>
+      <main>
+          <section class="cart">
+              <div class="vintage-backbag">
+                  <img src="assets/photo1.png" alt="A vintage backbag" />
+                  <div class="cart-info">
+                      <p>Vintage Backbag</p>
+                      <p class="price">$54.99 <span>$94.99</span></p>
+                      <div class="counter">
+                          <button>
+                              <span class="material-symbols-outlined">remove</span>
+                          </button>
+                          <h3>1</h3>
+                          <button>
+                              <span class="material-symbols-outlined">add</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="levi-shoes">
+                  <img src="assets/photo2.png" alt="Levi Shoes" />
+                  <div class="cart-info">
+                      <p>Levi Shoes</p>
+                      <p class="price">$74.99 <span>$124.99</span></p>
+                      <div class="counter">
+                          <button>
+                              <span class="material-symbols-outlined">remove</span>
+                          </button>
+                          <h3>1</h3>
+                           <button>
+                               <span class="material-symbols-outlined">add</span>
+                           </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="shipping-total">
+                  <p>Shipping</p>
+                  <p>$19</p>
+              </div>
+              <div class="shipping-total">
+                  <p>Total</p>
+                  <p>$148.98</p>
+              </div>
+          </section>
+          <section>
+              <section class="contact-info">
+              <p>Contact information</p>
+              <form>
+                  <label for="email">E-mail</label>
+                  <div class="input-border">
+                      <span class="material-symbols-outlined md-dark">mail</span>
+                      <input id="email" type="text" placeholder="Enter your email..."/>
+                  </div>
+                  <label for="phone">Phone</label>
+                  <div class="input-border">
+                      <span class="material-symbols-outlined md-dark">phone</span>
+                      <input id="phone" type="number" placeholder="Enter your phone..." />
+                  </div>
+              </form>
+          </section>
+          <section class="shipping">
+              <p>Shipping address</p>
+              <form>
+                  <label for="name">Full name</label>
+                  <div class="input-border">
+                     <span class="material-symbols-outlined">account_circle</span>
+                      <input id="name" type="text" value="Rodney Cotton"/>
+                  </div>
+                  <label for="address">Address</label>
+                  <div class="input-border">
+                      <span class="material-symbols-outlined md-dark">home</span>
+                      <input id="address" type="text" placeholder="Your address..." />
+                  </div>
+                  <label for="city">City</label>
+                  <div class="input-border">
+                      <span class="material-symbols-outlined md-dark">location_city</span>
+                      <input id="city" type="text" placeholder="Your city..." />
+                  </div>
+                  <div class="country-postal_code">
+                      <div>
+                          <label for="country">Country</label>
+                          <div class="input-border country">
+                              <span class="material-symbols-outlined md-dark">location_city</span>
+                              <select id="country" name="country">
+                                  <option value="Nigeria ">Nigeria</option>
+                                  <option value="Nigeria ">South Korea</option>
+                                  <option value="Nigeria ">South Africa</option>
+                                  <option value="Nigeria ">Ghana</option>
+                                  <option value="Nigeria ">Europe</option>
+                                  <option value="Nigeria ">Others</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div>
+                          <label for="postal_code">Postal code</label>
+                          <div class="input-border postal_code">
+                              <span class="material-symbols-outlined md-dark">markunread_mailbox</span>
+                              <input id="postal_code" type="text" placeholder="Your postal code.." />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" name="save_info" id="checkbox"/>
+                      <label for="checkbox" id="checkbox_label">Save this information for next time</label>
+                  </div>
+                  <button class="submit">Continue</button>
+              </form>
+          </section>
+          </section>
+      </main>
+      <footer>
+          <p>created by <span>Elizabeth</span> - devChallenges.io</p>
+      </footer>
   </body>
 </html>
